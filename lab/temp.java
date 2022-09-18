@@ -8,11 +8,12 @@ public class temp
 		int a[] = new int[n];
 
 		for(int i=0; i<n; i++) {
-			a[i].nextInt();
+			a[i] = input.nextInt();
 		}
 		
 		for(int i=0; i<n; i++) {
 			System.out.println(a[0]);
 		}
+		input.close();
 	}
 }
