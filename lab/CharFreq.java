@@ -22,5 +22,7 @@ public class CharFreq {
 		}
 		
 		System.out.println("Frequncy of " + ch + " is " + count);
+
+		input.close();
 	}
 }
