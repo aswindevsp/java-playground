@@ -117,9 +117,6 @@ class CalculatorFrame1 extends JFrame implements ActionListener {
         divBtn = new JButton("/");
         divBtn.setFont(new Font("Arial", Font.BOLD, 20));
         divBtn.setMargin(new Insets(0, 0, 0, 0));
-        moduloBtn = new JButton("%");
-        moduloBtn.setFont(new Font("Arial", Font.BOLD, 20));
-        moduloBtn.setMargin(new Insets(0, 0, 0, 0));
         equalsBtn = new JButton("=");
         equalsBtn.setFont(new Font("Arial", Font.BOLD, 20));
         equalsBtn.setMargin(new Insets(0, 0, 0, 0));
@@ -137,20 +134,18 @@ class CalculatorFrame1 extends JFrame implements ActionListener {
         digitBtn[0].setBounds(55, 195, 40, 40);
         clearBtn.setBounds(10, 195, 40, 40);
         decimalBtn.setBounds(100, 195, 40, 40);
-
         divBtn.setBounds(145, 60, 40, 40);
         multiBtn.setBounds(145, 105, 40, 40);
         subBtn.setBounds(145, 150, 40, 40);
         addBtn.setBounds(145, 195, 40, 40);
-        moduloBtn.setBounds(190, 60, 40, 40);
-        equalsBtn.setBounds(190, 105, 40, 130);
+        equalsBtn.setBounds(190, 60, 40, 175);
+        
         for (int i = 0; i < 11; i++)
-            digitBtn[i].addActionListener(this);
+        digitBtn[i].addActionListener(this);
         addBtn.addActionListener(this);
         subBtn.addActionListener(this);
         multiBtn.addActionListener(this);
         divBtn.addActionListener(this);
-        moduloBtn.addActionListener(this);
         equalsBtn.addActionListener(this);
         decimalBtn.addActionListener(this);
         clearBtn.addActionListener(this);
@@ -159,7 +154,6 @@ class CalculatorFrame1 extends JFrame implements ActionListener {
         add(subBtn);
         add(multiBtn);
         add(divBtn);
-        add(moduloBtn);
         add(equalsBtn);
         add(clearBtn);
         add(decimalBtn);
