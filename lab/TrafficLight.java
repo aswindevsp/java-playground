@@ -8,7 +8,7 @@ class TrafficLightGUI extends Canvas implements ItemListener {
     String state = null;
     TrafficLightGUI(JFrame j) {
         r1 = new JRadioButton("Red");
-        r2 = new JRadioButton("Orange");
+        r2 = new JRadioButton("Yellow");
         r3 = new JRadioButton("Green");
 
         r1.setBounds(20, 20, 100 , 30);
